@@ -65,7 +65,7 @@
 
 
             <!-- to put the build revision in the manifest of the jar -->
-           <!-- <plugin>
+           <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
                 <version>2.1</version>
@@ -80,7 +80,7 @@
                     </archive>
                 </configuration>
             </plugin>
-               -->
+
 
             <!-- To build a fat / uberjar -->
             <plugin>
