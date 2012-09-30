@@ -1,6 +1,8 @@
 package jmdb.tutorial;
 
+import com.google.common.cache.CacheBuilderSpec;
 import com.yammer.dropwizard.Service;
+import com.yammer.dropwizard.bundles.AssetsBundle;
 import com.yammer.dropwizard.config.Environment;
 import com.yammer.dropwizard.views.ViewBundle;
 import jmdb.tutorial.helloworld.HelloWorldResource;
@@ -15,6 +17,8 @@ public class HelloWorldService extends Service<HelloWorldConfiguration> {
     private HelloWorldService() {
         super("hello-world");
         addBundle(new ViewBundle());
+        CacheBuilderSpec cacheSpec = AssetsBundle.DEFAULT_CACHE_SPEC;
+        addBundle(new AssetsBundle("/assets/", cacheSpec, "/"));
     }
 
     @Override
