@@ -7,15 +7,9 @@
       <sourceFolder url="file://$MODULE_DIR$/../../src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../../src/main/resources" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../../target/generated-sources/annotations" isTestSource="false" />
-      <excludeFolder url="file://$MODULE_DIR$/../../target/META-INF" />
-      <excludeFolder url="file://$MODULE_DIR$/../../target/about_files" />
-      <excludeFolder url="file://$MODULE_DIR$/../../target/ch" />
       <excludeFolder url="file://$MODULE_DIR$/../../target/classes" />
-      <excludeFolder url="file://$MODULE_DIR$/../../target/com" />
-      <excludeFolder url="file://$MODULE_DIR$/../../target/javax" />
-      <excludeFolder url="file://$MODULE_DIR$/../../target/jmdb" />
-      <excludeFolder url="file://$MODULE_DIR$/../../target/org" />
       <excludeFolder url="file://$MODULE_DIR$/../../target/surefire" />
+      <excludeFolder url="file://$MODULE_DIR$/../../target/test-classes" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
@@ -62,6 +56,7 @@
     <orderEntry type="library" name="Maven: org.freemarker:freemarker:2.3.19" level="project" />
     <orderEntry type="library" name="Maven: com.github.spullara.mustache.java:compiler:0.8.4" level="project" />
     <orderEntry type="library" name="Maven: com.yammer.dropwizard:dropwizard-auth:0.5.1" level="project" />
+    <orderEntry type="library" name="Maven: junit:junit:4.7" level="project" />
   </component>
 </module>
 

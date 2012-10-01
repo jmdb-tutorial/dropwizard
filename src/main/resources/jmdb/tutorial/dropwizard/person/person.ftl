@@ -1,4 +1,4 @@
-<#-- @ftlvariable name="" type="jmdb.tutorial.person.PersonView" -->
+<#-- @ftlvariable name="" type="jmdb.tutorial.dropwizard.person.PersonView" -->
 <html>
 <body>
 <!-- calls getPerson().getName() and sanitizes it -->

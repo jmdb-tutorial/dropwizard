@@ -1,4 +1,4 @@
-package jmdb.tutorial.person;
+package jmdb.tutorial.dropwizard.person;
 
 public class PersonDAO {
     public Person find(String id) {

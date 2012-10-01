@@ -1,4 +1,4 @@
-package jmdb.tutorial.helloworld;
+package jmdb.tutorial.dropwizard.helloworld;
 
 public class Saying {
     private final long id;

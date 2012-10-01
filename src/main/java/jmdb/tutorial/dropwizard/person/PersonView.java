@@ -1,4 +1,4 @@
-package jmdb.tutorial.person;
+package jmdb.tutorial.dropwizard.person;
 
 import com.yammer.dropwizard.views.View;
 

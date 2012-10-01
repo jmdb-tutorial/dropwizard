@@ -34,6 +34,11 @@
             <artifactId>dropwizard-auth</artifactId>
             <version>0.5.1</version>
         </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.7</version>
+        </dependency>
     </dependencies>
 
     <properties>
@@ -127,7 +132,7 @@
                                         implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
                                 <transformer
                                         implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <mainClass>jmdb.tutorial.HelloWorldService</mainClass>
+                                    <mainClass>jmdb.tutorial.dropwizard.HelloWorldService</mainClass>
                                 </transformer>
                             </transformers>
                         </configuration>

@@ -1,4 +1,4 @@
-package jmdb.tutorial.person;
+package jmdb.tutorial.dropwizard.person;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;

@@ -1,13 +1,13 @@
-package jmdb.tutorial;
+package jmdb.tutorial.dropwizard;
 
 import com.google.common.cache.CacheBuilderSpec;
 import com.yammer.dropwizard.Service;
 import com.yammer.dropwizard.bundles.AssetsBundle;
 import com.yammer.dropwizard.config.Environment;
 import com.yammer.dropwizard.views.ViewBundle;
-import jmdb.tutorial.helloworld.HelloWorldResource;
-import jmdb.tutorial.person.PersonDAO;
-import jmdb.tutorial.person.PersonResource;
+import jmdb.tutorial.dropwizard.helloworld.HelloWorldResource;
+import jmdb.tutorial.dropwizard.person.PersonDAO;
+import jmdb.tutorial.dropwizard.person.PersonResource;
 
 public class HelloWorldService extends Service<HelloWorldConfiguration> {
     public static void main(String[] args) throws Exception {

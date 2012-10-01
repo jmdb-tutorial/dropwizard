@@ -1,4 +1,4 @@
-package jmdb.tutorial.helloworld;
+package jmdb.tutorial.dropwizard.helloworld;
 
 import com.google.common.base.Optional;
 import com.yammer.metrics.annotation.Timed;
