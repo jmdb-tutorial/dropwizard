@@ -2,4 +2,4 @@ template: Hello, %s!
 defaultName: Stranger
 
 http:
-  rootPath: /service/*  # Default is /*
+  rootPath: /app/*  # Default is /*

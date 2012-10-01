@@ -5,6 +5,7 @@ import com.yammer.dropwizard.Service;
 import com.yammer.dropwizard.bundles.AssetsBundle;
 import com.yammer.dropwizard.config.Environment;
 import com.yammer.dropwizard.views.ViewBundle;
+import jmdb.tutorial.dropwizard.app.applicationform.ApplicationFormResource;
 import jmdb.tutorial.dropwizard.app.healthcheck.TemplateHealthCheck;
 import jmdb.tutorial.dropwizard.app.helloworld.HelloWorldResource;
 import jmdb.tutorial.dropwizard.domain.person.PersonDao;
@@ -17,7 +18,9 @@ public class HelloWorldApp extends Service<HelloWorldConfiguration> {
 
     private HelloWorldApp() {
         super("hello-world");
+
         addBundle(new ViewBundle());
+
         CacheBuilderSpec cacheSpec = AssetsBundle.DEFAULT_CACHE_SPEC;
         addBundle(new AssetsBundle("/assets/", cacheSpec, "/"));
     }
@@ -28,6 +31,7 @@ public class HelloWorldApp extends Service<HelloWorldConfiguration> {
 
         final String template = configuration.getTemplate();
         final String defaultName = configuration.getDefaultName();
+        environment.addResource(new ApplicationFormResource());
         environment.addResource(new HelloWorldResource(template, defaultName));
         environment.addResource(new PersonResource(new PersonDao()));
         environment.addHealthCheck(new TemplateHealthCheck(template));

@@ -1,5 +1,6 @@
 package jmdb.tutorial.dropwizard.app.person;
 
+import jmdb.tutorial.dropwizard.app.FreemarkerView;
 import jmdb.tutorial.dropwizard.domain.person.PersonDao;
 
 import javax.ws.rs.GET;
@@ -18,7 +19,7 @@ public class PersonResource {
     }
 
     @GET
-    public PersonView getPerson(@PathParam("id") String id) {
-        return new PersonView(dao.find(id));
+    public FreemarkerView getPerson(@PathParam("id") String id) {
+        return new FreemarkerView("person/person.ftl", dao.find(id));
     }
 }
