@@ -17,8 +17,7 @@ public class ApplicationFormResource {
 
     @GET
     public FreemarkerView blankApplicationForm() {
-        return new FreemarkerView("applicationform/applicationform.ftl");
+        return new FreemarkerView("applicationform/applicationForm.ftl");
     }
-
 
 }
