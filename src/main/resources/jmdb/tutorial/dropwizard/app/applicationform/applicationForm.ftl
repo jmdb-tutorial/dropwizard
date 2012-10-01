@@ -9,7 +9,7 @@
 
 <div id="applicant-section">
 
-  <form action="app/applicationform" method="POST">
+  <form action="applicationform" method="POST">
     <div>
       <label for="firstName">First Name:</label>
       <input name="firstName" type="text" />
