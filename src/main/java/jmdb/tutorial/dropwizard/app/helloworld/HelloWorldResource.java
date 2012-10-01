@@ -1,4 +1,4 @@
-package jmdb.tutorial.dropwizard.helloworld;
+package jmdb.tutorial.dropwizard.app.helloworld;
 
 import com.google.common.base.Optional;
 import com.yammer.metrics.annotation.Timed;
@@ -11,7 +11,7 @@ import javax.ws.rs.core.MediaType;
 
 import static java.lang.String.format;
 
-@Path("/hello-world")
+@Path("/helloworld")
 @Produces(MediaType.APPLICATION_JSON)
 public class HelloWorldResource {
     private final String template;

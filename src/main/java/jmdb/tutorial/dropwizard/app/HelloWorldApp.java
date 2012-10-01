@@ -1,20 +1,21 @@
-package jmdb.tutorial.dropwizard;
+package jmdb.tutorial.dropwizard.app;
 
 import com.google.common.cache.CacheBuilderSpec;
 import com.yammer.dropwizard.Service;
 import com.yammer.dropwizard.bundles.AssetsBundle;
 import com.yammer.dropwizard.config.Environment;
 import com.yammer.dropwizard.views.ViewBundle;
-import jmdb.tutorial.dropwizard.helloworld.HelloWorldResource;
-import jmdb.tutorial.dropwizard.person.PersonDAO;
-import jmdb.tutorial.dropwizard.person.PersonResource;
+import jmdb.tutorial.dropwizard.app.healthcheck.TemplateHealthCheck;
+import jmdb.tutorial.dropwizard.app.helloworld.HelloWorldResource;
+import jmdb.tutorial.dropwizard.domain.person.PersonDao;
+import jmdb.tutorial.dropwizard.app.person.PersonResource;
 
-public class HelloWorldService extends Service<HelloWorldConfiguration> {
+public class HelloWorldApp extends Service<HelloWorldConfiguration> {
     public static void main(String[] args) throws Exception {
-        new HelloWorldService().run(args);
+        new HelloWorldApp().run(args);
     }
 
-    private HelloWorldService() {
+    private HelloWorldApp() {
         super("hello-world");
         addBundle(new ViewBundle());
         CacheBuilderSpec cacheSpec = AssetsBundle.DEFAULT_CACHE_SPEC;
@@ -28,7 +29,7 @@ public class HelloWorldService extends Service<HelloWorldConfiguration> {
         final String template = configuration.getTemplate();
         final String defaultName = configuration.getDefaultName();
         environment.addResource(new HelloWorldResource(template, defaultName));
-        environment.addResource(new PersonResource(new PersonDAO()));
+        environment.addResource(new PersonResource(new PersonDao()));
         environment.addHealthCheck(new TemplateHealthCheck(template));
     }
 

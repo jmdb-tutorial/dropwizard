@@ -1,6 +1,7 @@
-package jmdb.tutorial.dropwizard.person;
+package jmdb.tutorial.dropwizard.app.person;
 
 import com.yammer.dropwizard.views.View;
+import jmdb.tutorial.dropwizard.domain.person.Person;
 
 public class PersonView extends View {
     private final Person person;

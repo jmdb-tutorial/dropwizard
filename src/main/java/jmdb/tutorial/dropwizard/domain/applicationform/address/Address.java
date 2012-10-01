@@ -1,4 +1,4 @@
-package jmdb.tutorial.dropwizard.applicationform.address;
+package jmdb.tutorial.dropwizard.domain.applicationform.address;
 
 public class Address {
 

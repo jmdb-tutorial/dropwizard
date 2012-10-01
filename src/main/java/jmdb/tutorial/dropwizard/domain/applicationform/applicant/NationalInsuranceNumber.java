@@ -1,4 +1,4 @@
-package jmdb.tutorial.dropwizard.applicationform.applicant;
+package jmdb.tutorial.dropwizard.domain.applicationform.applicant;
 
 public class NationalInsuranceNumber {
 

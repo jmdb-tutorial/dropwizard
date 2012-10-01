@@ -1,4 +1,4 @@
-package jmdb.tutorial.dropwizard;
+package jmdb.tutorial.dropwizard.app;
 
 import com.yammer.dropwizard.config.Configuration;
 import org.codehaus.jackson.annotate.JsonProperty;

@@ -132,7 +132,7 @@
                                         implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
                                 <transformer
                                         implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <mainClass>jmdb.tutorial.dropwizard.HelloWorldService</mainClass>
+                                    <mainClass>jmdb.tutorial.dropwizard.app.HelloWorldApp</mainClass>
                                 </transformer>
                             </transformers>
                         </configuration>

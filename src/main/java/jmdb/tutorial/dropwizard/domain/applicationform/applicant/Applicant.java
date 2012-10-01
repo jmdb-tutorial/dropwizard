@@ -1,6 +1,6 @@
-package jmdb.tutorial.dropwizard.applicationform.applicant;
+package jmdb.tutorial.dropwizard.domain.applicationform.applicant;
 
-import jmdb.tutorial.dropwizard.applicationform.address.Address;
+import jmdb.tutorial.dropwizard.domain.applicationform.address.Address;
 
 public class Applicant {
 

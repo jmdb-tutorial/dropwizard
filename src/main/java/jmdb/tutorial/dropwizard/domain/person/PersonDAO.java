@@ -1,6 +1,6 @@
-package jmdb.tutorial.dropwizard.person;
+package jmdb.tutorial.dropwizard.domain.person;
 
-public class PersonDAO {
+public class PersonDao {
     public Person find(String id) {
         return new Person("Jim", "Barritt");
     }

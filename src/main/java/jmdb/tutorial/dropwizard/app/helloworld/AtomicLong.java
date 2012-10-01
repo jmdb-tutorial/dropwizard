@@ -1,4 +1,4 @@
-package jmdb.tutorial.dropwizard.helloworld;
+package jmdb.tutorial.dropwizard.app.helloworld;
 
 public class AtomicLong {
 

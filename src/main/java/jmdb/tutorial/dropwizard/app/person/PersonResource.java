@@ -1,4 +1,6 @@
-package jmdb.tutorial.dropwizard.person;
+package jmdb.tutorial.dropwizard.app.person;
+
+import jmdb.tutorial.dropwizard.domain.person.PersonDao;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -9,9 +11,9 @@ import javax.ws.rs.core.MediaType;
 @Path("/people/{id}")
 @Produces(MediaType.TEXT_HTML)
 public class PersonResource {
-    private final PersonDAO dao;
+    private final PersonDao dao;
 
-    public PersonResource(PersonDAO dao) {
+    public PersonResource(PersonDao dao) {
         this.dao = dao;
     }
 

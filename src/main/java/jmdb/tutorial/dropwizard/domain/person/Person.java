@@ -1,4 +1,4 @@
-package jmdb.tutorial.dropwizard.person;
+package jmdb.tutorial.dropwizard.domain.person;
 
 public class Person {
     private final String firstName;

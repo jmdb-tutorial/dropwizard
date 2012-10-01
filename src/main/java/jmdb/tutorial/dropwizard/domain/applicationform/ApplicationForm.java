@@ -1,7 +1,7 @@
-package jmdb.tutorial.dropwizard.applicationform;
+package jmdb.tutorial.dropwizard.domain.applicationform;
 
-import jmdb.tutorial.dropwizard.applicationform.applicant.Applicant;
-import jmdb.tutorial.dropwizard.applicationform.employment.EmploymentHistory;
+import jmdb.tutorial.dropwizard.domain.applicationform.applicant.Applicant;
+import jmdb.tutorial.dropwizard.domain.applicationform.employment.EmploymentHistory;
 
 public class ApplicationForm {
 

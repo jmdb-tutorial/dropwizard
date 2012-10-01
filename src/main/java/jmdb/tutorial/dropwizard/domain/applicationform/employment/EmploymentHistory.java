@@ -1,4 +1,4 @@
-package jmdb.tutorial.dropwizard.applicationform.employment;
+package jmdb.tutorial.dropwizard.domain.applicationform.employment;
 
 import java.util.ArrayList;
 import java.util.Iterator;
