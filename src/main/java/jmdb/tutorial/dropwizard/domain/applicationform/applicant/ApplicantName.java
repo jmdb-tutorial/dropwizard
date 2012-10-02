@@ -9,4 +9,8 @@ public class ApplicantName {
         this.firstName = firstName;
         this.lastName = lastName;
     }
+
+    public String toString() {
+        return "firstName: " + firstName + ", lastName: " + lastName;
+    }
 }

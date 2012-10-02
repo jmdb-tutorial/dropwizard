@@ -1,6 +1,7 @@
 package jmdb.tutorial.dropwizard.app.applicationform;
 
 import jmdb.tutorial.dropwizard.app.FreemarkerView;
+import jmdb.tutorial.dropwizard.domain.applicationform.applicant.ApplicantName;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -27,15 +28,9 @@ public class ApplicationFormResource {
 
     @POST
     @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
-    public void submitApplication(MultivaluedMap<String, String> formParams) {
+    public void submitApplication(ApplicantName applicantName) {
 
-        StringBuilder sb = new StringBuilder();
-
-        for (String value : formParams.keySet()) {
-            sb.append(" ").append(value).append(" = ").append(formParams.get(value));
-        }
-
-        log.info(sb.toString());
+        log.info(applicantName.toString());
 
     }
 }
