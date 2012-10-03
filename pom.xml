@@ -16,9 +16,9 @@
     </parent>
 
     <scm>
-        <connection>scm:git:file://Users/jim/work/code/github/jmdb-tutorial/dropwizard</connection>
-        <developerConnection>scm:git:file://Users/jim/work/code/github/jmdb-tutorial/dropwizard</developerConnection>
-        <url>scm:git:file://Users/jim/work/code/github/jmdb-tutorial/dropwizard</url>
+        <connection>scm:git:git@github.com:jmdb-tutorial/dropwizard.git</connection>
+        <developerConnection>scm:git:git@github.com:jmdb-tutorial/dropwizard.git</developerConnection>
+        <url>scm:git:git@github.com:jmdb-tutorial/dropwizard.git</url>
     </scm>
 
     <properties>
@@ -30,10 +30,6 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>buildnumber-maven-plugin</artifactId>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
