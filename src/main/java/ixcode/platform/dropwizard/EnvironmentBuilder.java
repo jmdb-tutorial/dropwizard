@@ -11,11 +11,16 @@ public class EnvironmentBuilder {
     private final Environment environment;
 
     public static EnvironmentBuilder configure(Environment environment) {
-        return new EnvironmentBuilder(environment);
+        return new EnvironmentBuilder(environment).utf8Filter();
     }
 
     private EnvironmentBuilder(Environment environment) {
         this.environment = environment;
+    }
+
+    public EnvironmentBuilder utf8Filter() {
+        environment.addFilter(new Utf8ResponseFilter(), "*");
+        return this;
     }
 
 
