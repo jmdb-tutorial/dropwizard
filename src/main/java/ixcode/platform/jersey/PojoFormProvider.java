@@ -17,6 +17,7 @@ import java.lang.annotation.Annotation;
 import java.lang.reflect.Type;
 
 import static javax.ws.rs.core.MediaType.APPLICATION_FORM_URLENCODED;
+import static org.cjimera.Parser.parse;
 
 @Provider
 @Consumes(APPLICATION_FORM_URLENCODED  + ";charset=utf-8")
@@ -38,17 +39,9 @@ public class PojoFormProvider extends AbstractMessageReaderWriterProvider<Object
                            MultivaluedMap<String, String> httpHeaders,
                            InputStream entityStream) throws IOException, WebApplicationException {
 
-        BufferedReader reader = new BufferedReader(new InputStreamReader(entityStream, "UTF-8"));
-
-        StringBuilder entityBody = new StringBuilder();
-
-        while (reader.ready()) {
-            entityBody.append(reader.readLine()).append("\n");
-        }
-
-        System.out.println("Here is my entity body:\n" + entityBody + "\n");
-
-        return null;
+        return parse().inputStream(entityStream)
+                .from().wwwFormUrlEncoded()
+                .to(type);
     }
 
     @Override

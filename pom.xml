@@ -25,6 +25,14 @@
         <dropwizard.app.class>jmdb.tutorial.dropwizard.app.HelloWorldApp</dropwizard.app.class>
     </properties>
 
+    <dependencies>
+        <dependency>
+            <groupId>cjimera.org</groupId>
+            <artifactId>cjimera</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
     <build>
         <plugins>
             <plugin>
