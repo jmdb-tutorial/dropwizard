@@ -37,6 +37,8 @@ public class JadeProvider implements MessageBodyWriter<JadeView> {
     @Override
     public void writeTo(JadeView jadeView, Class<?> aClass, Type type, Annotation[] annotations, MediaType mediaType, MultivaluedMap<String, Object> stringObjectMultivaluedMap, OutputStream outputStream) throws IOException, WebApplicationException {
         String output = Jade4J.render(jadeView.getTemplateName(), jadeView.getModel());
-        new Tidy().parse(new ByteArrayInputStream(output.getBytes()), outputStream);
+        Tidy tidy = new Tidy();
+        tidy.setTidyMark(false);
+        tidy.parse(new ByteArrayInputStream(output.getBytes()), outputStream);
     }
 }
