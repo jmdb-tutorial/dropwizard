@@ -4,7 +4,7 @@ block variables
 html
   include head
     meta(name="description", content=vari)
-  body(class="test #{data.name}")
+  body(class="test #{data.firstName} #{data.secondName}")
     include helloworld/hw
     h2 bob
     block body
