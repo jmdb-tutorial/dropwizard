@@ -1,9 +1,11 @@
 package jmdb.tutorial.dropwizard.domain.person;
 
 import com.google.code.morphia.annotations.Id;
-import org.apache.commons.lang.builder.EqualsBuilder;
+import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 import org.bson.types.ObjectId;
+
+import static org.apache.commons.lang3.builder.EqualsBuilder.reflectionEquals;
 
 public class Person {
     @Id ObjectId id;
@@ -21,7 +23,7 @@ public class Person {
 
     @Override
     public boolean equals(Object o) {
-        return EqualsBuilder.reflectionEquals(this, o, new String[] {"id"});
+        return reflectionEquals(this, o, new String[]{"id"});
     }
 
     @Override

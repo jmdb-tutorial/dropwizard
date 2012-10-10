@@ -734,6 +734,7 @@
         <option value="$PROJECT_DIR$/../../pom.xml" />
         <option value="$PROJECT_DIR$/../../../../ixcode/platform/core/pom.xml" />
         <option value="$PROJECT_DIR$/../../../../ixcode/platform/dropwizard/pom.xml" />
+        <option value="$PROJECT_DIR$/../../../../ixcode/cjimera/pom.xml" />
       </list>
     </option>
   </component>
@@ -880,6 +881,7 @@
   </component>
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../../../ixcode/cjimera/ide/intellij/cjimera.iml" filepath="$PROJECT_DIR$/../../../../ixcode/cjimera/ide/intellij/cjimera.iml" />
       <module fileurl="file://$PROJECT_DIR$/dropwizard-server.iml" filepath="$PROJECT_DIR$/dropwizard-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../../../ixcode/platform/core/ide/intellij/platform-core.iml" filepath="$PROJECT_DIR$/../../../../ixcode/platform/core/ide/intellij/platform-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../../../ixcode/platform/dropwizard/ide/intellij/platform-dropwizard.iml" filepath="$PROJECT_DIR$/../../../../ixcode/platform/dropwizard/ide/intellij/platform-dropwizard.iml" />
@@ -893,6 +895,7 @@
   </component>
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../../../ixcode/cjimera" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../../../../ixcode/platform" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../.." vcs="Git" />
   </component>
@@ -1255,17 +1258,6 @@
         <root url="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/2.1/commons-io-2.1-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: commons-lang:commons-lang:2.6">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/commons-lang/commons-lang/2.6/commons-lang-2.6.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/commons-lang/commons-lang/2.6/commons-lang-2.6-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/commons-lang/commons-lang/2.6/commons-lang-2.6-sources.jar!/" />
-      </SOURCES>
-    </library>
     <library name="Maven: commons-logging:commons-logging:1.1.1">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar!/" />
@@ -1407,17 +1399,6 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-dbcp/7.0.29/tomcat-dbcp-7.0.29-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: org.cjimera:cjimera:1.0-SNAPSHOT">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/cjimera/cjimera/1.0-SNAPSHOT/cjimera-1.0-SNAPSHOT.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/cjimera/cjimera/1.0-SNAPSHOT/cjimera-1.0-SNAPSHOT-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/cjimera/cjimera/1.0-SNAPSHOT/cjimera-1.0-SNAPSHOT-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.codehaus.jackson:jackson-core-asl:1.9.9">
