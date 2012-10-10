@@ -25,6 +25,14 @@
         <dropwizard.app.class>jmdb.tutorial.dropwizard.app.HelloWorldApp</dropwizard.app.class>
     </properties>
 
+
+    <repositories>
+        <repository>
+            <id>com.google.code.morphia</id>
+            <url>http://morphia.googlecode.com/svn/mavenrepo/</url>
+        </repository>
+    </repositories>
+
     <dependencies>
         <dependency>
             <groupId>commons-lang</groupId>
@@ -40,6 +48,16 @@
             <groupId>de.neuland</groupId>
             <artifactId>jade4j</artifactId>
             <version>0.2.19</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.morphia</groupId>
+            <artifactId>morphia</artifactId>
+            <version>0.99</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mongodb</groupId>
+            <artifactId>mongo-java-driver</artifactId>
+            <version>2.9.1</version>
         </dependency>
     </dependencies>
 

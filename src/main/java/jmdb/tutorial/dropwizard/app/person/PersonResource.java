@@ -3,6 +3,7 @@ package jmdb.tutorial.dropwizard.app.person;
 import jmdb.tutorial.dropwizard.app.FreemarkerView;
 import jmdb.tutorial.dropwizard.app.JadeView;
 import jmdb.tutorial.dropwizard.domain.person.PersonDao;
+import org.bson.types.ObjectId;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
