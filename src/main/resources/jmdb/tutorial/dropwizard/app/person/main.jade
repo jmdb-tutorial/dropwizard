@@ -1,0 +1,10 @@
+vari = "foo"
+block variables
+!!! 5
+html
+  include head
+    meta(name="description", content=vari)
+  body(class="test #{data.name}")
+    include helloworld/hw
+    h2 bob
+    block body
