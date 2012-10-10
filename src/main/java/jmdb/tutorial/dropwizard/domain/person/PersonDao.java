@@ -15,7 +15,7 @@ public class PersonDao {
     public PersonDao()  {
         try {
             Morphia m = new Morphia();
-            ds = m.createDatastore(new Mongo("localhost", 12345), "test");
+            ds = m.createDatastore(new Mongo("localhost", 27017), "test");
             m.map(Person.class);
         } catch(UnknownHostException e) {
             throw new RuntimeException(e);
@@ -23,7 +23,10 @@ public class PersonDao {
     }
 
     public Person find(String id) {
-//        return ds.get(Person.class, new ObjectId(id));
+        return ds.get(Person.class, new ObjectId(id));
+    }
+
+    public Person fakeFind(String id) {
         return new Person("Chris", "Cheshire", 29);
     }
 
