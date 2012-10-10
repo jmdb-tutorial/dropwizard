@@ -1,8 +1,9 @@
-!!! 5
-html
-  head
-    title
-      #{data.firstName} #{data.secondName}
-  body
-    h1 This is a person called, #{data.firstName} #{data.secondName}!  So Jade is working!
-    h2 This person is #{data.age} years old.
+extends main
+
+append variables
+  vari = "magic"
+
+append body
+  vari = "bar"
+  h1 This is a person called, #{data.firstName} #{data.secondName}!  So Jade is working! Let's go to the #{vari}!
+  h2 This person is #{data.age} years old.
