@@ -1,6 +1,7 @@
 package jmdb.tutorial.dropwizard.app.person;
 
 import jmdb.tutorial.dropwizard.app.FreemarkerView;
+import jmdb.tutorial.dropwizard.app.JadeView;
 import jmdb.tutorial.dropwizard.domain.person.PersonDao;
 
 import javax.ws.rs.GET;
@@ -8,6 +9,8 @@ import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
+import java.util.HashMap;
+import java.util.Map;
 
 @Path("/people/{id}")
 @Produces(MediaType.TEXT_HTML)
@@ -19,7 +22,9 @@ public class PersonResource {
     }
 
     @GET
-    public FreemarkerView getPerson(@PathParam("id") String id) {
-        return new FreemarkerView("person/person.ftl", dao.find(id));
+    public JadeView getPerson(@PathParam("id") String id) {
+        Map<String, Object> model = new HashMap<String, Object>();
+        model.put("data", this.dao.find(id));
+        return new JadeView(PersonResource.class.getResource("person.jade").getPath(), model);
     }
 }

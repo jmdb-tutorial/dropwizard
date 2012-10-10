@@ -10,6 +10,7 @@ import jmdb.tutorial.dropwizard.app.applicationform.ApplicationFormResource;
 import jmdb.tutorial.dropwizard.app.healthcheck.TemplateHealthCheck;
 import jmdb.tutorial.dropwizard.app.helloworld.HelloWorldResource;
 import jmdb.tutorial.dropwizard.app.person.PersonResource;
+import jmdb.tutorial.dropwizard.app.template.JadeProvider;
 import jmdb.tutorial.dropwizard.domain.person.PersonDao;
 
 import static ixcode.platform.dropwizard.EnvironmentBuilder.configure;
@@ -36,7 +37,7 @@ public class HelloWorldApp extends Service<HelloWorldConfiguration> {
         final String defaultName = configuration.getDefaultName();
 
         configure(environment)
-                .withProviders(new PojoFormProvider())
+                .withProviders(new PojoFormProvider(), new JadeProvider())
                 .withHealthChecks(new TemplateHealthCheck(template))
                 .withResources(new ApplicationFormResource(),
                                new HelloWorldResource(template, defaultName),
