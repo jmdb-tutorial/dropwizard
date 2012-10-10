@@ -2,6 +2,7 @@ package jmdb.tutorial.dropwizard.app.person;
 
 import jmdb.tutorial.dropwizard.app.FreemarkerView;
 import jmdb.tutorial.dropwizard.app.JadeView;
+import jmdb.tutorial.dropwizard.domain.person.Person;
 import jmdb.tutorial.dropwizard.domain.person.PersonDao;
 import org.bson.types.ObjectId;
 
@@ -25,7 +26,9 @@ public class PersonResource {
     @GET
     public JadeView getPerson(@PathParam("id") String id) {
         Map<String, Object> model = new HashMap<String, Object>();
-        model.put("data", this.dao.find(id));
+        Person person = this.dao.fakeFind(id);
+        //Person person = this.dao.find(id);
+        model.put("data", person);
         return new JadeView(PersonResource.class.getResource("person.jade").getPath(), model);
     }
 }

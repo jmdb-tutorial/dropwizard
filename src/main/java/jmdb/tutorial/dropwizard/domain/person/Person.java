@@ -7,9 +7,9 @@ import org.bson.types.ObjectId;
 
 public class Person {
     @Id ObjectId id;
-    private String firstName;
-    private String secondName;
-    private int age;
+    public String firstName;
+    public String secondName;
+    public int age;
 
     public Person() {}
 
@@ -17,14 +17,6 @@ public class Person {
         this.firstName = firstName;
         this.secondName = secondName;
         this.age = age;
-    }
-
-    public String getName() {
-        return firstName + " " + secondName;
-    }
-
-    public int getAge() {
-        return age;
     }
 
     @Override
