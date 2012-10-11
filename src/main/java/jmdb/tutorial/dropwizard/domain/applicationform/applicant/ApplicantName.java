@@ -1,7 +1,7 @@
 package jmdb.tutorial.dropwizard.domain.applicationform.applicant;
 
-import org.apache.commons.lang.builder.ReflectionToStringBuilder;
-import org.apache.commons.lang.builder.ToStringStyle;
+import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
 
 import javax.xml.crypto.Data;
 import java.util.ArrayList;
