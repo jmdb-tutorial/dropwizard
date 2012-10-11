@@ -1343,6 +1343,17 @@
         <root url="jar://$MAVEN_REPOSITORY$/log4j/log4j/1.2.16/log4j-1.2.16-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Maven: net.sf.oval:oval:1.81">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/oval/oval/1.81/oval-1.81.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/oval/oval/1.81/oval-1.81-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/oval/oval/1.81/oval-1.81-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Maven: ognl:ognl:3.0.3">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/ognl/ognl/3.0.3/ognl-3.0.3.jar!/" />

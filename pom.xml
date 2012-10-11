@@ -64,6 +64,11 @@
             <artifactId>jtidy</artifactId>
             <version>4aug2000r7-dev</version>
         </dependency>
+        <dependency>
+            <groupId>net.sf.oval</groupId>
+            <artifactId>oval</artifactId>
+            <version>1.81</version>
+        </dependency>
     </dependencies>
 
     <build>
