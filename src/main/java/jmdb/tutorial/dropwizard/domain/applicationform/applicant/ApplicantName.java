@@ -1,5 +1,6 @@
 package jmdb.tutorial.dropwizard.domain.applicationform.applicant;
 
+import net.sf.oval.constraint.*;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 
@@ -11,7 +12,14 @@ import java.util.List;
 
 public class ApplicantName {
 
+    @NotNull
+    @NotEmpty
+    @MaxLength(10)
+    @MinLength(4)
     private final String firstName;
+
+    @MaxLength(2)
+    @MatchPattern(pattern = {"[A-Z]"})
     private final String lastName;
 
     private final String favouriteColor;
